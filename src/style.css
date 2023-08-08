@@ -28,10 +28,6 @@ section {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-/* .favourite,
-.cart {
-  display: none;
-} */
 .favourite,
 .cart {
   background-color: black;
@@ -40,6 +36,7 @@ section {
   border-radius: 1rem;
 }
 .heart {
+  display: none;
   position: relative;
   width: 100px;
   height: 90px;
@@ -51,10 +48,10 @@ section {
   content: "";
   position: absolute;
   top: 0;
-  width: 52px;
-  height: 80px;
+  width: 22px;
+  height: 40px;
   border-radius: 50px 50px 0 0;
-  background: gray;
+  background: red;
 }
 
 .heart::before {
@@ -64,7 +61,15 @@ section {
 }
 
 .heart::after {
-  left: 0;
+  left: 29px;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
+}
+.active {
+  display: flex;
+}
+button,
+input[type="submit"],
+input[type="button"] {
+  border-radius: 1rem;
 }
