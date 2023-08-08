@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping_Cart</title>
+    <script src="./src/script.js" defer></script>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="keyboard">
+        <button class="removeButton">Remove</button>
+        <button class="favouriteButton">Favourite</button>
+        <figure>
+          <img
+            src="https://secure.logitech.com/assets/47978/5/g19s-gaming-keyboard.jpg"
+            alt="Keyboard"
+          />
+          <figcaption>Keyboard</figcaption>
+          <hr />
+        </figure>
+        <span>price: 50$</span>
+        <form name="keyboardForm">
+          <label for="quantity">Quantity</label>
+          <input id="keyboard" type="number" name="keyboard" min="0" />
+          <input class="addBtn" type="submit" value="Add" />
+          <input class="removeBtn" type="button" value="remove" />
+        </form>
+        <p id="kTotal"></p>
+        <div class="heart"></div>
+      </div>
+      <div class="mouse">
+        <button class="removeButton">Remove</button>
+        <button class="favouriteButton">Favourite</button>
+        <figure>
+          <img
+            src="https://th.bing.com/th/id/OIP.-sHnKFZyr73sBybdmnDUcwAAAA?pid=ImgDet&rs=1"
+            alt="mouse"
+          />
+          <figcaption>Mouse</figcaption>
+          <hr />
+        </figure>
+        <span>price: 30$</span>
+        <form name="mouseForm">
+          <label for="quantity">Quantity</label>
+          <input id="mouse" type="number" name="mouse" min="0" />
+          <input class="addBtn" type="submit" value="Add" />
+          <input class="removeBtn" type="button" value="remove" />
+        </form>
+        <p id="mTotal"></p>
+        <div class="heart"></div>
+      </div>
+      <p id="total"></p>
+      <button id="purchase">purchase</button>
+      <br />
+      <a href=""><button>Reset</button></a>
+    </section>
+  </body>
+</html>
